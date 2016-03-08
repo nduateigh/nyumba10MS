@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head><title>penPicture</title>
+<style>
+    #header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+    }
+    #nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;	
+    }
+    #section {
+    width:500px;
+    background-color:#eeeeee;
+    float:left;
+    padding:10px;	
+    }
+    #footer {
+    background-color:black;
+    width:250px;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+</head>
+
+<body>
+    <div id="header">
+<h1>Residents Registration Form</h1>
+</div>
+    
+
+ 
+  
+  
+  <!--<div style='position: absolute;left: 0px'> -->
+  <div id="section">
+   <form action="saveDetails" method="post">
+            
+          
+           
+       <p align="center">kindly fill in all the regions</p>
+            <h2>personal information:</h2>
+            <label>Passport Photo</label>
+            <input type="image" name="sirName" ><br>
+            <label>ID Number</label>
+            <input type="text" name="ID" required>
+            <p><label>Salutation</label><select name="salutation" required >
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="M/S.">Miss.</option>
+                </select>
+                
+            </p>
+            
+            
+            <label>Sir Name</label>
+            <input type="text" name="sirName" ><br>
+            <label>First Name</label>
+            <input type="text" name="firstName" required><br>
+            <label>Middle Name</label>
+            <input type="text" name="middleName" required><br>
+            <label>Mobile Tel</label>
+            <input type="tel" name="telNo" required><br>
+            <label>Email</label>
+            <input type="email" name="email" required><br>
+            
+             <label>Marital Status</label>
+            
+                <select name="maritalStatus" required="">
+             
+             <option value="Married">Married</option>
+                 <option value="Divorced">Divorced</option>
+                 <option value="Widow">Widow</option>
+                <option value="Widower">Widower</option>
+                <option value="Bachelor">Bachelor</option>
+                <option value="Spinster">Spinster</option>
+                </select><br>
+            <label>Place Of Work</label>
+                 <input type="text" name="Occupation"><br>
+                 <label>Date to Amani</label>
+            <input type="date" name="dateToAmani" required=""><br>
+
+
+                <label>Nature of Occupancy:</label>
+                <select name="occupancyNature">
+                    <option value="Owner" selected>land lord</option>
+                    <option value="Rental">tenant</option>
+                    <option value="Sublet">condor</option>
+                </select>
+                
+            
+            <br>
+            
+   </form>
+      
+      </div>
+          <div  style='position: absolute;right:400px'>
+               <form action="saveDetails" method="post">
+              <br><br><br><br><br><br><br><br>
+           
+                 <h3 align="left"> Previous Residence Details</h3>
+                
+                 <label>Residence Name</label>
+                 <input type="text" name="from" required=""><br>
+                 <label>Referee</label>
+                 <input type="text" name="referee" required=""><br>
+                 <label>Referee Contacts</label>
+                 <input type="tel" name="refereeContacts" required=""><br>
+                 <label>Reason For Moving</label>
+                 <input type="text" name="reasonForMoving" required><br>
+                  
+                 
+               </form>
+              
+              <input type='submit' value='submit'>
+              
+              <div id="footer">
+                  Copyright&copy;Amani Village 2016
+</div>
+ 
+
+</body>
+</html>
